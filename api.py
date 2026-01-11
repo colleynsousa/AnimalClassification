@@ -62,7 +62,7 @@ state_dict=torch.load("ResCNN.pth",map_location="cpu")
 model.load_state_dict(state_dict)
 model.eval()
 
-with open("data/name of the animals.txt","r") as f: 
+with open("name of the animals.txt","r") as f: 
     class_names=[line.strip() for line in f]
 
 transform=transforms.Compose([
